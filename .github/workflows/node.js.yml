@@ -25,5 +25,5 @@ jobs:
     - run: npm ci
     - run:  |
         touch .env
-        echo  "${{env.fracspace_prod_env }} > .env
+        echo  "${{ secrets.FRACSPACE_PRODUCTION_ENV }}" > .env
         
